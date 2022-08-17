@@ -15,13 +15,11 @@ public:
             a.pop_back();
         }
         combinations(candidates,ans,a,index+1,target,len);
-        
     }
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
         vector<vector<int>>ans;
         vector<int>a;
         combinations(candidates,ans,a,0,target,candidates.size());
         return ans;
-        
     }
 };
