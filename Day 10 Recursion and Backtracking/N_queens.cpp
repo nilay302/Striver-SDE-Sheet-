@@ -2,7 +2,8 @@
 using namespace std;
 
 
-//we go column by column and check the positioning of queen and after placing a particular queen on chess and finding the
+//we go column by column and check the positioning of 
+//queen and after placing a particular queen on chess and finding the
 //particular solution we place the string in ans, and by backtracking find other answers as well.
 
 class Solution {
