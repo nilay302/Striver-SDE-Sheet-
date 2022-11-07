@@ -1,5 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+//we check if target is greater than the number and if
+//yes than add it to the array, 
+//by this we can include a single number multiple times as well
+//remember to pop the element as well after adding
+
 class Solution {
 public:
     void combinations( vector<int>& candidates,vector<vector<int>>&ans, vector<int>&a,int index,int target,int len){
@@ -9,6 +15,7 @@ public:
             }
             return;
         }
+        
         if(candidates[index]<=target){
             a.push_back(candidates[index]);
             combinations(candidates,ans,a,index,target - candidates[index],len);
